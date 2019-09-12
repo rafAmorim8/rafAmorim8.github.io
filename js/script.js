@@ -1,11 +1,11 @@
 // Redirect to Portfolio section
 const goToPortfolio = () => {
-  window.location.replace("/src/index.html#about");
+  window.location.replace("/index.html#about");
 };
 
 // Redirect to Contact section
 const goToContact = () => {
-  window.location.replace("/src/index.html#contact");
+  window.location.replace("/index.html#contact");
 };
 
 // Data object with skills data
