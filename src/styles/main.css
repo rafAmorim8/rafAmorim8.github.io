@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+
+.line-full {
+  width: 30px;
+  height: 8px;
+  background: #1B1919;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.line-empty {
+  width: 30px;
+  height: 8px;
+  background: #FEFEFE;
+  border: 1px solid #1B1919;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.btn, header .overlay .container .header-info .btn-portfolio, #about .about-info .about-btns .btn-contact, #about .about-info .about-btns .btn-resume, #contact .wrapper #contactForm button {
+  width: 175px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 25px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+header {
+  width: 100vw;
+  height: 700px;
+  background-image: url("../img/bg-header.jpg");
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.75)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75));
+}
+
+header .overlay .container {
+  height: 100%;
+}
+
+header .overlay .container #navbar {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .overlay .container #navbar .brand-logo {
+  cursor: pointer;
+}
+
+header .overlay .container #navbar .brand-logo a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header .overlay .container #navbar .menu-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header .overlay .container #navbar .menu-area .menu-item {
+  list-style: none;
+}
+
+header .overlay .container #navbar .menu-area .menu-item .menu-link {
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-right: 30px;
+  font-family: 'Rubik', serif;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+header .overlay .container #navbar .menu-area .menu-item .menu-link:hover {
+  color: #ff2e63;
+}
+
+header .overlay .container #navbar .menu-area .menu-item .menu-link:active {
+  color: #ff2e63;
+}
+
+header .overlay .container #navbar #hamburger-menu {
+  display: none;
+}
+
+header .overlay .container .header-info {
+  margin-top: 150px;
+}
+
+header .overlay .container .header-info h1 {
+  color: #FFFFFF;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+header .overlay .container .header-info h1 span {
+  color: #ff2e63;
+}
+
+header .overlay .container .header-info p {
+  margin: 25px 0;
+  color: #FFFFFF;
+  font-size: 1.3em;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+header .overlay .container .header-info .btn-portfolio {
+  display: block;
+  background: #ff2e63;
+  color: #FFFFFF;
+  margin: 50px auto 0 auto;
+}
+
+header .overlay .container .header-info .btn-portfolio:hover {
+  background: #FFF;
+  color: #ff2e63;
+}
+
+#about {
+  height: 600px;
+  background: #FEFEFE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 0;
+}
+
+#about .about-info {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about .about-info h2 {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+
+#about .about-info p {
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  padding: 0 20px;
+}
+
+#about .about-info .about-btns .btn-contact {
+  background: #ff2e63;
+  color: #FEFEFE;
+}
+
+#about .about-info .about-btns .btn-contact:hover {
+  background: #FEFEFE;
+  color: #ff2e63;
+  border: 2px solid #ff2e63;
+}
+
+#about .about-info .about-btns .btn-resume {
+  background: #ff2e63;
+  color: #FEFEFE;
+}
+
+#about .about-info .about-btns .btn-resume:hover {
+  background: #FEFEFE;
+  color: #ff2e63;
+  border: 2px solid #ff2e63;
+}
+
+#about .skills-info {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about .skills-info .skills-box .skill-item h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+#about .skills-info .skills-box .skill-item .skill-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+}
+
+#portfolio {
+  width: 100%;
+  height: 700px;
+  background: #1B1919;
+}
+
+#contact {
+  width: 100%;
+  height: 700px;
+  background: #FEFEFE;
+}
+
+#contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 70px 0;
+}
+
+#contact .wrapper h2 {
+  padding: 0 0 70px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#contact .wrapper #contactForm {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  grid-gap: 30px;
+}
+
+#contact .wrapper #contactForm p {
+  margin: 0;
+}
+
+#contact .wrapper #contactForm label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#contact .wrapper #contactForm label:last-of-type {
+  margin-bottom: 15px;
+}
+
+#contact .wrapper #contactForm input,
+#contact .wrapper #contactForm textarea {
+  width: 80%;
+}
+
+#contact .wrapper #contactForm input {
+  border: none;
+  border-bottom: 2px solid #1B1919;
+  height: 35px;
+  font-size: 18px;
+}
+
+#contact .wrapper #contactForm input:focus {
+  border-bottom: 2px solid #ff2e63;
+}
+
+#contact .wrapper #contactForm textarea {
+  border: 2px solid #1B1919;
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  resize: none;
+  overflow: auto;
+}
+
+#contact .wrapper #contactForm textarea:focus {
+  border: 2px solid #ff2e63;
+}
+
+#contact .wrapper #contactForm button {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 0 auto;
+  background: #ff2e63;
+  color: #FFFFFF;
+}
+
+#contact .wrapper #contactForm button:hover {
+  background: #FEFEFE;
+  color: #ff2e63;
+  border: 2px solid #ff2e63;
+}
+
+footer {
+  width: 100vw;
+  height: 400px;
+  background-image: url("../img/bg-footer.jpg");
+  background-position: center;
+  position: relative;
+  z-index: -2;
+}
+
+footer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

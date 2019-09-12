@@ -1,0 +1,87 @@
+#contact {
+  width: 100%;
+  height: 700px;
+  background: $color-cream;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 70px 0;
+
+    h2 {
+      padding: 0 0 70px 0;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    #contactForm {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto;
+      grid-gap: 30px;
+      // padding: 0 60px;
+
+      p {
+        margin: 0;
+      }
+
+      label {
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 2px;
+
+        &:last-of-type {
+          margin-bottom: 15px;
+        }
+      }
+
+      input,
+      textarea {
+        width: 80%;
+      }
+
+      input {
+        border: none;
+        border-bottom: 2px solid $color-dark;
+        height: 35px;
+        font-size: 18px;
+
+        &:focus {
+          border-bottom: 2px solid $color-pink;
+        }
+      }
+
+      textarea {
+        border: 2px solid $color-dark;
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        resize: none;
+        overflow: auto;
+
+        &:focus {
+          border: 2px solid $color-pink;
+        }
+      }
+
+      button {
+        @extend .btn;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: 0 auto;
+        background: $color-pink;
+        color: #FFFFFF;
+
+        &:hover {
+          background: $color-cream;
+          color: $color-pink;
+          border: 2px solid $color-pink;
+        }
+      }
+    }
+  }
+}
