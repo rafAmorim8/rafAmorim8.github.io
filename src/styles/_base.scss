@@ -7,6 +7,10 @@
   font-family: 'Rubik', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Variables
 $color-pink: rgb(255, 46, 99);
 $color-dark: #1B1919;
@@ -21,6 +25,7 @@ select:focus {
 .container {
   width: 80%;
   margin: 0 auto;
+  height: 100%;
 }
 
 .page-title {

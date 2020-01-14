@@ -7,6 +7,10 @@
   font-family: 'Rubik', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -16,6 +20,7 @@ select:focus {
 .container {
   width: 80%;
   margin: 0 auto;
+  height: 100%;
 }
 
 .page-title {
@@ -274,6 +279,35 @@ header .overlay .container .header-info .btn-portfolio:hover {
   background: #1B1919;
 }
 
+#portfolio h2 {
+  padding: 70px 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#portfolio .container-portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  grid-gap: 15px;
+}
+
+#portfolio .container-portfolio #travel-website {
+  background: url("../img/travel_agency_website.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio .container-portfolio #survival-game {
+  background: url("../img/survival_game_picture.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
 #contact {
   width: 100%;
   height: 700px;
@@ -303,6 +337,7 @@ header .overlay .container .header-info .btn-portfolio:hover {
   display: -ms-grid;
   display: grid;
   width: 100%;
+      grid-template-areas: "name company" "phone email" "message message" "btn btn";
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   margin: 0 auto;
@@ -348,6 +383,11 @@ header .overlay .container .header-info .btn-portfolio:hover {
   font-size: 18px;
   resize: none;
   overflow: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  grid-column: 1 span 2;
 }
 
 #contact .wrapper #contactForm textarea:focus {
@@ -355,12 +395,15 @@ header .overlay .container .header-info .btn-portfolio:hover {
 }
 
 #contact .wrapper #contactForm button {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 2;
   margin: 0 auto;
   background: #ff2e63;
   color: #FFFFFF;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn;
 }
 
 #contact .wrapper #contactForm button:hover {

@@ -18,6 +18,10 @@
     #contactForm {
       display: grid;
       width: 100%;
+      grid-template-areas: "name company"
+        "phone email"
+        "message message"
+        "btn btn";
       grid-template-columns: 1fr 1fr;
       margin: 0 auto;
       grid-gap: 30px;
@@ -62,6 +66,8 @@
         font-size: 18px;
         resize: none;
         overflow: auto;
+        grid-area: message;
+        grid-column: 1 span 2;
 
         &:focus {
           border: 2px solid $color-pink;
@@ -75,6 +81,7 @@
         margin: 0 auto;
         background: $color-pink;
         color: #FFFFFF;
+        grid-area: btn;
 
         &:hover {
           background: $color-cream;

@@ -2,4 +2,33 @@
   width: 100%;
   height: 700px;
   background: $color-dark;
+
+  h2 {
+    padding: 70px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .container-portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 15px;
+
+    .portfolio-item {}
+
+    #travel-website {
+      background: url('../img/travel_agency_website.JPG');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #survival-game {
+      background: url('../img/survival_game_picture.JPG');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
 }
